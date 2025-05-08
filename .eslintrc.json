@@ -1,0 +1,34 @@
+{
+  "extends": ["next/core-web-vitals", "plugin:tailwindcss/recommended", "plugin:storybook/recommended", "prettier"],
+  "rules": {
+    "tailwindcss/no-custom-classname": [
+      "warn",
+      {
+        "skipClassAttribute": true,
+        "cssFiles": ["src/**/*.css"],
+        "callees": ["classnames", "clsx", "twMerge", "cn"]
+      }
+    ],
+
+    // import
+    "import/newline-after-import": ["error", { "count": 1 }],
+    "sort-imports": ["error", { "ignoreCase": true, "ignoreDeclarationSort": true }],
+    "import/order": [
+      "warn",
+      {
+        "groups": ["builtin", "external", "internal", ["parent", "sibling"]],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": false
+        }
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": ["src*", "..*", "./*/"]
+      }
+    ]
+  }
+}

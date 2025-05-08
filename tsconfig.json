@@ -1,0 +1,66 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@icons": [
+        "./src/components/icons/index.ts"
+      ],
+      "@ui/*": [
+        "./src/components/ui/*"
+      ],
+      "@container/*": [
+        "./src/components/container/*"
+      ],
+      "@be/*": [
+        "./backend/*"
+      ],
+      "@/*": [
+        "./src/*"
+      ],
+      "@@/*": [
+        "./*"
+      ],
+      "@shared/*": [
+        "./shared/*"
+      ],
+      "@config/*": [
+        "./config/*"
+      ],
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "server.ts",
+    "dist/frontend/types/**/*.ts",
+    "backend/scripts/*.ts",
+    "backend/seeders/*.ts",
+    "shared/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
