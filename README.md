@@ -136,6 +136,12 @@ docker compose watch
 Or, run it without docker,
 make sure you already intall all the [requirements](#requirements)
 
+Install dependencies : 
+```sh
+npm install
+```
+
+Run application :
 ```sh
 npm run dev
 ```
